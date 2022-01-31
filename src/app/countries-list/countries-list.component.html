@@ -1,0 +1,10 @@
+<div class="card text-center text-white bg-secondary mb-3 scroll country-list" >
+    <ul>
+        <ng-container *ngFor="let obj of this.countryList">
+          <li class = "row" routerLink="{{obj['name']['common']}}">
+            <img src= {{obj.flags.png}} class="country-flag" >
+            <p class="col">{{obj["name"]["common"]}}</p>
+          </li>
+        </ng-container>
+      </ul>
+</div>

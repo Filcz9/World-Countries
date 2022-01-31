@@ -1,0 +1,8 @@
+.continentList{
+    margin-top: 2%;
+    margin-left: 22%;
+}
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }

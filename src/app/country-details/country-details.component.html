@@ -1,0 +1,19 @@
+
+<div *ngIf="country != null" class="centered">
+<h3>{{country.name}}</h3>
+<div class="card" style="width: 18rem;">
+    <div class="card-body ">
+      <img class="country-flag" src="{{country.png}}" alt="Card image cap">
+      <span  class="card-title col big ">{{country.fifa}}</span>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Capital: {{country.capital}}</li>
+    </ul>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Currency: {{country.currencies[0]}}</li>
+    </ul>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Population: {{country.population}}</li>
+    </ul>
+  </div>
+</div>
